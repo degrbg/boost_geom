@@ -18,7 +18,7 @@ int main()
   polygon t3{{ {0.2, 0.2}, {0.8, 0.2}, {0.2, 0.8} }};
 
   std::vector<polygon> N;
-  boost::geometry::intersection(q4, t3, N);
+  geom::intersection(q4, t3, N);
 
   for (auto i = 0; i < N.size(); ++i) {
     std::cout << "poly " << i << std::endl;
