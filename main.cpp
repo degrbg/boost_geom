@@ -21,7 +21,7 @@ int main()
   geom::intersection(q4, t3, N);
 
   for (auto i = 0; i < N.size(); ++i) {
-    std::cout << "poly " << i << std::endl;
+    std::cout << "polygon " << i << std::endl;
     auto& polynodes = N[i].outer();
 
     for (auto j = 0; j < polynodes.size(); ++j) {
