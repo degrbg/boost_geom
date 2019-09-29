@@ -22,10 +22,10 @@ int main()
 
   for (auto i = 0; i < N.size(); ++i) {
     std::cout << "polygon " << i << std::endl;
-    const auto& polyNodes = N[i].outer();
+    const auto& polynodes = N[i].outer();
 
-    for (auto j = 0; j < polyNodes.size(); ++j) {
-      const auto& nd = polyNodes[j];
+    for (auto j = 0; j < polynodes.size(); ++j) {
+      const auto& nd = polynodes[j];
       std::cout << "  node " << j << ": "
                 << nd.get<0>() << " " << nd.get<1>() << std::endl;
     }
